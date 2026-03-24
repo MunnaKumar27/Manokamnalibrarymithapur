@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <rect width="640" height="420" rx="32" fill="#1c2541"/>
+  <circle cx="525" cy="92" r="78" fill="#ffbf47" opacity=".28"/>
+  <rect x="58" y="272" width="270" height="72" rx="18" fill="#fffaf3" opacity=".14"/>
+  <circle cx="170" cy="164" r="54" fill="#f7c7b7"/>
+  <rect x="118" y="214" width="104" height="110" rx="28" fill="#c8f2df"/>
+  <rect x="222" y="184" width="136" height="120" rx="20" fill="#ffbf47"/>
+  <rect x="245" y="205" width="92" height="16" rx="8" fill="#1c2541" opacity=".18"/>
+  <rect x="245" y="232" width="74" height="14" rx="7" fill="#1c2541" opacity=".14"/>
+  <text x="58" y="84" fill="#fffaf3" font-family="Arial, sans-serif" font-size="34" font-weight="700">BPSC</text>
+  <text x="58" y="118" fill="#fffaf3" font-family="Arial, sans-serif" font-size="18" opacity=".85">State exam preparation</text>
+</svg>

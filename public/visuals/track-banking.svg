@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <rect width="640" height="420" rx="32" fill="#dde8ff"/>
+  <circle cx="526" cy="88" r="70" fill="#1c2541" opacity=".12"/>
+  <rect x="72" y="240" width="246" height="86" rx="24" fill="#1c2541" opacity=".12"/>
+  <rect x="320" y="152" width="176" height="120" rx="22" fill="#ffbf47"/>
+  <rect x="347" y="178" width="120" height="18" rx="9" fill="#1c2541" opacity=".18"/>
+  <rect x="347" y="208" width="80" height="16" rx="8" fill="#1c2541" opacity=".15"/>
+  <circle cx="194" cy="162" r="48" fill="#f7c7b7"/>
+  <rect x="146" y="210" width="96" height="112" rx="28" fill="#f26c63"/>
+  <text x="58" y="84" fill="#1c2541" font-family="Arial, sans-serif" font-size="34" font-weight="700">Banking</text>
+  <text x="58" y="118" fill="#5a6782" font-family="Arial, sans-serif" font-size="18">Mock tests and current affairs focus</text>
+</svg>

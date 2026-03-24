@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <rect width="640" height="420" rx="32" fill="#ffbf47"/>
+  <circle cx="120" cy="90" r="74" fill="#fffaf3" opacity=".15"/>
+  <rect x="280" y="142" width="202" height="142" rx="28" fill="#1c2541"/>
+  <rect x="302" y="168" width="156" height="18" rx="9" fill="#fffaf3" opacity=".18"/>
+  <rect x="302" y="198" width="122" height="14" rx="7" fill="#fffaf3" opacity=".12"/>
+  <circle cx="192" cy="162" r="48" fill="#f7c7b7"/>
+  <rect x="142" y="210" width="98" height="112" rx="28" fill="#f26c63"/>
+  <rect x="72" y="300" width="470" height="16" rx="8" fill="#1c2541" opacity=".12"/>
+  <text x="58" y="84" fill="#1c2541" font-family="Arial, sans-serif" font-size="34" font-weight="700">Academic</text>
+  <text x="58" y="118" fill="#594226" font-family="Arial, sans-serif" font-size="18">College study with a focused premium setup</text>
+</svg>

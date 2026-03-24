@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <rect width="640" height="420" rx="32" fill="#f26c63"/>
+  <circle cx="110" cy="90" r="72" fill="#fffaf3" opacity=".18"/>
+  <rect x="360" y="90" width="180" height="220" rx="28" fill="#fffaf3" opacity=".16"/>
+  <circle cx="232" cy="160" r="48" fill="#f7c7b7"/>
+  <rect x="184" y="208" width="96" height="110" rx="28" fill="#1c2541"/>
+  <rect x="300" y="190" width="140" height="110" rx="18" fill="#fffaf3"/>
+  <rect x="324" y="214" width="92" height="14" rx="7" fill="#1c2541" opacity=".16"/>
+  <rect x="324" y="240" width="108" height="14" rx="7" fill="#1c2541" opacity=".12"/>
+  <text x="58" y="84" fill="#fffaf3" font-family="Arial, sans-serif" font-size="34" font-weight="700">SSC</text>
+  <text x="58" y="118" fill="#fffaf3" font-family="Arial, sans-serif" font-size="18" opacity=".88">Consistent revision support</text>
+</svg>

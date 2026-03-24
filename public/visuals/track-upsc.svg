@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <rect width="640" height="420" rx="32" fill="#fffaf3"/>
+  <circle cx="528" cy="94" r="74" fill="#f26c63" opacity=".16"/>
+  <path d="M398 286c0-76-52-142-126-142s-126 66-126 142h252z" fill="#1c2541"/>
+  <circle cx="272" cy="126" r="44" fill="#f7c7b7"/>
+  <rect x="416" y="154" width="128" height="130" rx="24" fill="#ffbf47"/>
+  <rect x="434" y="178" width="92" height="16" rx="8" fill="#1c2541" opacity=".18"/>
+  <rect x="434" y="206" width="74" height="14" rx="7" fill="#1c2541" opacity=".14"/>
+  <text x="58" y="84" fill="#1c2541" font-family="Arial, sans-serif" font-size="34" font-weight="700">UPSC</text>
+  <text x="58" y="118" fill="#5a6782" font-family="Arial, sans-serif" font-size="18">Deep reading and disciplined long-hour study</text>
+</svg>

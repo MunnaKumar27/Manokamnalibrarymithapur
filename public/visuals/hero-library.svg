@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fffaf3"/>
+      <stop offset="100%" stop-color="#dde8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="720" rx="48" fill="url(#bg2)"/>
+  <rect x="112" y="150" width="676" height="390" rx="34" fill="#1c2541"/>
+  <rect x="152" y="190" width="130" height="310" rx="18" fill="#f26c63"/>
+  <rect x="300" y="190" width="110" height="310" rx="18" fill="#ffbf47"/>
+  <rect x="426" y="190" width="118" height="310" rx="18" fill="#c8f2df"/>
+  <rect x="560" y="190" width="100" height="310" rx="18" fill="#fffaf3"/>
+  <rect x="678" y="190" width="70" height="310" rx="18" fill="#5a6782"/>
+  <circle cx="182" cy="128" r="24" fill="#f26c63"/>
+  <circle cx="248" cy="128" r="16" fill="#ffbf47"/>
+  <circle cx="720" cy="110" r="82" fill="#ffbf47" opacity=".18"/>
+  <text x="110" y="622" fill="#1c2541" font-family="Arial, sans-serif" font-size="40" font-weight="700">Library Aesthetic</text>
+  <text x="110" y="668" fill="#5a6782" font-family="Arial, sans-serif" font-size="24">Clean layout, quiet shelves, and a premium self-study mood</text>
+</svg>
