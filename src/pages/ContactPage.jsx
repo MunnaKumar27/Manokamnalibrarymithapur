@@ -1,6 +1,7 @@
 import { Clock3, Mail, MapPin, MessageCircleMore, PhoneCall } from "lucide-react";
 import PageHero from "../components/PageHero";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import { branches, contactPhoto, siteContent } from "../data/siteContent";
 
 function ContactPage() {
@@ -8,6 +9,17 @@ function ContactPage() {
 
   return (
     <div className="space-y-10 lg:space-y-14">
+      <Seo
+        title="Contact Manokamna Library in Mithapur, Patna"
+        description="Contact Manokamna Library for seat enquiry, timing details, directions, WhatsApp support, and branch information in Mithapur, Patna."
+        keywords={[
+          ...siteContent.keywords,
+          "contact Manokamna Library",
+          "seat enquiry Mithapur library",
+          "library address Mithapur Patna",
+        ]}
+      />
+
       <PageHero
         eyebrow="Contact"
         title="Visit Manokamna Library and ask about seat availability."

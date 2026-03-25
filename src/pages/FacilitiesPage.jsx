@@ -2,11 +2,23 @@ import CallBanner from "../components/CallBanner";
 import FacilityCard from "../components/FacilityCard";
 import PageHero from "../components/PageHero";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import { facilities, facilityPhotos, siteContent } from "../data/siteContent";
 
 function FacilitiesPage() {
   return (
     <div className="space-y-10 lg:space-y-14">
+      <Seo
+        title="Library Facilities at Manokamna Library, Mithapur Patna"
+        description="Explore the facilities at Manokamna Library including separate girls study room, separate girls and boys washrooms, CCTV security, comfortable chairs, spacious desks, RO water, and a silent study environment."
+        keywords={[
+          ...siteContent.keywords,
+          "library facilities Mithapur Patna",
+          "girls study room library Patna",
+          "library with CCTV and washroom in Patna",
+        ]}
+      />
+
       <PageHero
         eyebrow="Facilities"
         title="A well-maintained study space designed for daily comfort and deep focus."

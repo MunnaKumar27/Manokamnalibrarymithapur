@@ -2,14 +2,43 @@ import { ArrowRight, MapPin, PhoneCall, ShieldCheck, Sparkles, Trophy } from "lu
 import { Link } from "react-router-dom";
 import CallBanner from "../components/CallBanner";
 import FacilityCard from "../components/FacilityCard";
+import FacilitySpotlightSection from "../components/FacilitySpotlightSection";
 import PremiumGallery from "../components/PremiumGallery";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import StatsSection from "../components/StatsSection";
+import TestimonialsSection from "../components/TestimonialsSection";
 import { branches, facilities, heroPhotos, highlights, siteContent, studyTracks } from "../data/siteContent";
 
 function HomePage() {
+  const highlightMeta = [
+    {
+      icon: Sparkles,
+      note: "A great fit for students who want to lock in a calm and disciplined seat early.",
+    },
+    {
+      icon: ShieldCheck,
+      note: "This section highlights the separate girls study room and separate washroom facility clearly.",
+    },
+    {
+      icon: Trophy,
+      note: "Built for aspirants who need daily silence, structure, and long focused study hours.",
+    },
+  ];
+
   return (
     <div className="space-y-10 lg:space-y-14">
+      <Seo
+        title="Best Study Library in Mithapur, Patna"
+        description="Manokamna Library is a peaceful self study library in Mithapur, Patna with separate girls study room, separate washroom facilities, CCTV security, comfortable seating, and a disciplined study environment."
+        keywords={[
+          ...siteContent.keywords,
+          "best study library in Mithapur Patna",
+          "self study library in Mithapur",
+          "separate girls study room library Patna",
+        ]}
+      />
+
       <section className="glass-panel mesh-card relative overflow-hidden rounded-[2.25rem] px-5 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-14">
         <div className="absolute inset-0 hero-grid opacity-35" />
         <div className="relative grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
@@ -54,15 +83,43 @@ function HomePage() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-3">
-              {highlights.map((highlight) => (
-                <div
-                  key={highlight.value}
-                  className="lift-card rounded-[1.5rem] border border-[var(--color-border)] bg-white/75 p-5"
-                >
-                  <p className="text-lg font-semibold text-[var(--color-ink)]">{highlight.value}</p>
-                  <p className="mt-2 text-sm leading-6 text-[var(--color-ink-soft)]">{highlight.label}</p>
-                </div>
-              ))}
+              {highlights.map((highlight, index) => {
+                const Icon = highlightMeta[index].icon;
+
+                return (
+                  <div
+                    key={highlight.value}
+                    className={`feature-spot-card lift-card group relative overflow-hidden rounded-[1.75rem] border border-[var(--color-border)] bg-white/80 p-5 ${index === 1 ? "feature-spot-card-priority spotlight-ring" : ""}`}
+                  >
+                    <div className="feature-spot-glow" />
+                    <div className="relative space-y-4">
+                      <div className="flex items-start justify-between gap-4">
+                        <span className={`feature-badge ${index === 1 ? "feature-badge-priority" : ""}`}>
+                          {highlight.badge}
+                        </span>
+                        <div className={`feature-icon-orb ${index === 1 ? "feature-icon-orb-priority" : ""}`}>
+                          <Icon size={18} />
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <p className="text-lg font-semibold text-[var(--color-ink)]">{highlight.value}</p>
+                        <p className="text-sm leading-6 text-[var(--color-ink-soft)]">{highlight.label}</p>
+                      </div>
+
+                      <div className="rounded-[1.25rem] border border-white/70 bg-white/72 px-4 py-3 shadow-[0_14px_30px_rgba(28,37,65,0.08)]">
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--color-rose)]">
+                          Key Highlight
+                        </p>
+                        <p className="mt-2 text-sm font-semibold text-[var(--color-ink)]">{highlight.accent}</p>
+                        <p className="mt-2 text-xs leading-6 text-[var(--color-ink-soft)]">
+                          {highlightMeta[index].note}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -71,9 +128,16 @@ function HomePage() {
               {heroPhotos.map((photo, index) => (
                 <div
                   key={photo.src}
-                  className={`photo-frame image-overlay hero-photo-card group ${index === 0 ? "col-span-2 h-52 sm:h-64" : "hero-photo-card-secondary h-40 sm:h-48"}`}
+                  className={`photo-frame image-overlay hero-photo-card group ${index === 0 ? "col-span-2 h-52 sm:h-64" : index === 1 ? "hero-photo-card-secondary h-40 sm:h-48" : "hero-photo-card-secondary h-40 sm:h-48"}`}
+                  style={{ animationDelay: `${index * 160}ms` }}
                 >
-                  <img src={photo.src} alt={photo.alt} loading="eager" />
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    loading={index === 0 ? "eager" : "lazy"}
+                    decoding="async"
+                    fetchPriority={index === 0 ? "high" : "auto"}
+                  />
                   <div className="absolute inset-x-0 bottom-0 z-10 p-4 text-[var(--color-paper)]">
                     <p className="text-sm font-semibold uppercase tracking-[0.24em]">{photo.title}</p>
                     <p className="mt-1 text-xs leading-5 text-white/82 sm:text-sm">{photo.subtitle}</p>
@@ -123,6 +187,10 @@ function HomePage() {
       </section>
 
       <StatsSection />
+
+      <TestimonialsSection />
+
+      <FacilitySpotlightSection />
 
       <Reveal as="section" className="grid gap-6 lg:grid-cols-2" delay={60}>
         {branches.map((branch) => (

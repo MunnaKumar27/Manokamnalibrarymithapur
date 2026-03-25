@@ -1,11 +1,23 @@
 import { Clock3, PhoneCall } from "lucide-react";
 import PageHero from "../components/PageHero";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import { branches, shiftPlans, siteContent } from "../data/siteContent";
 
 function TimingPage() {
   return (
     <div className="space-y-10 lg:space-y-14">
+      <Seo
+        title="Timing and Shift Details for Manokamna Library"
+        description="Check the timing and shift-friendly study options at Manokamna Library in Mithapur, Patna. Morning, daytime, evening, and long-hour study routines are supported based on seat availability."
+        keywords={[
+          ...siteContent.keywords,
+          "library timing Mithapur Patna",
+          "study shift library in Patna",
+          "seat timing self study library Mithapur",
+        ]}
+      />
+
       <PageHero
         eyebrow="Timing & Shift"
         title="Flexible study timing and shift-friendly seating for different routines."

@@ -2,11 +2,23 @@ import { MapPin, Target, Users } from "lucide-react";
 import CallBanner from "../components/CallBanner";
 import PageHero from "../components/PageHero";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import { aboutPhotos, audience, siteContent } from "../data/siteContent";
 
 function AboutPage() {
   return (
     <div className="space-y-10 lg:space-y-14">
+      <Seo
+        title="About Manokamna Library in Mithapur, Patna"
+        description="Learn about Manokamna Library, a trusted and well-maintained self study library in Mithapur, Patna built for focused study, competitive exam preparation, and a disciplined learning atmosphere."
+        keywords={[
+          ...siteContent.keywords,
+          "about Manokamna Library",
+          "trusted self study library in Mithapur Patna",
+          "competitive exam study library Patna",
+        ]}
+      />
+
       <PageHero
         eyebrow="About Us"
         title="A peaceful and disciplined library built for productive study."

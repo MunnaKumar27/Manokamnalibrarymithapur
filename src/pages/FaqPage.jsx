@@ -2,11 +2,37 @@ import CallBanner from "../components/CallBanner";
 import FaqList from "../components/FaqList";
 import PageHero from "../components/PageHero";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import { faqs, siteContent } from "../data/siteContent";
 
 function FaqPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <div className="space-y-10 lg:space-y-14">
+      <Seo
+        title="FAQ for Manokamna Library, Mithapur Patna"
+        description="Read answers to common questions about Manokamna Library, including girls study room availability, competitive exam preparation, facilities, and why students choose this library in Mithapur, Patna."
+        keywords={[
+          ...siteContent.keywords,
+          "Manokamna Library FAQ",
+          "best study library in Mithapur Patna FAQ",
+          "girls study room library FAQ Patna",
+        ]}
+        schema={[faqSchema]}
+      />
+
       <PageHero
         eyebrow="FAQ"
         title="Answers to common questions from students and parents."

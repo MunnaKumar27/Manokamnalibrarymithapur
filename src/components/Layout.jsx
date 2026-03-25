@@ -16,12 +16,16 @@ function ScrollToTop() {
 }
 
 function Layout() {
+  const location = useLocation();
+
   return (
     <div className="page-shell min-h-screen">
       <ScrollToTop />
       <Navbar />
       <main className="mx-auto w-full max-w-7xl px-4 pb-28 pt-6 sm:px-6 md:pb-12 lg:px-8">
-        <Outlet />
+        <div key={location.pathname} className="page-enter">
+          <Outlet />
+        </div>
       </main>
       <Footer />
       <FloatingWhatsApp />
